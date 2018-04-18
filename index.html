@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>New York Times Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+    <script src="assets/javascript/logic.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>New York Times Search</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+
+                <!--- Search Parameters -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Search Parameters</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="search">Search Term:</label>
+                                <input type="text" class="form-control" id="search">
+                            </div>
+                            <div class="form-group">
+                                <label for="sel1">Number of Records To Retrieve:</label>
+                                <select class="form-control" id="sel1">
+                                    <option value="1">1</option>
+                                    <option value="5" selected>5</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="startYear">Start Year:</label>
+                                <input type="text" class="form-control" id="startYear">
+                            </div>
+                            <div class="form-group">
+                                <label for="endYear">End Year:</label>
+                                <input type="text" class="form-control" id="endYear">
+                            </div>
+                            <button type="submit" class="btn btn-default" id="searchBtn">Search</button>
+                            <button type="button" class="btn btn-default" id="clearBtn">Clear</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <!--- Results Panel -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Search Results</h3>
+                    </div>
+                    <div class="panel-body" id="search-results">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+</body>
+
+</html>
